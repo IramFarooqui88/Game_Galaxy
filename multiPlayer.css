@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.multiPlayer,.singlePlayer{
+    width: 100vw;
+    height: 100vh;
+    border: 2px solid black;
+    background: linear-gradient(to top, rgb(10, 10, 6), rgb(78, 78, 204), rgb(83, 83, 240));
+   
+    padding-top: 40px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   }
+
+.gameImg{
+    
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    
+}
+img{
+    border-radius: 10%;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px  rgb(8, 8, 8);
+    transition:  all 0.6s;
+    animation: animate 2s;
+  
+}
+img:hover{
+    box-shadow: 0px 0px 20px 4px #fff;
+   
+    color: #fff;
+    transform: scale(1.06);
+   
+}
+h1{
+    font-family: sans-serif;
+    margin-top: 20px;
+    color: #070707;
+    text-shadow: 0px 0px 5px  #fffefe;
+    transition:  all 0.6s;
+    animation: animate 2s ;
+}
+h1:hover{
+    scale:1.3;
+    text-shadow: 0px 0px 6px  #fff;
+
+}
+
+.btn1, .btn2{
+    color: #fff;
+    margin-top: 10px;
+    height: 40px;
+    width: 300px;
+    text-align: center;
+    border: 1px solid #111111;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px  rgb(8, 8, 8);
+    background:linear-gradient(black,rgba(61, 61, 212, 0.671),black); 
+    transition: all .5s;
+    animation: animate 2s;
+}
+.btn1:hover, .btn2:hover
+{
+    box-shadow: 0px 0px 20px 4px #fff;
+   
+    color: #fff;
+    transform: scale(1.1);
+   
+}
+
+.ball1, .ball2, .ball3, .ball4 ,.ball5, .ball6, .ball7, .ball8, .ball9, .ball10{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 10px 10px rgb(252, 251, 251);
+    opacity: .3;
+    transition: all .2s;
+    animation: animate 2s ;
+   
+}
+.ball2{
+    width:200px;
+    height: 200px;
+   
+    top: 200px;
+}
+
+.ball3{
+    width:200px;
+    height: 200px;
+   
+    top: 40px;
+    left: 20px;
+}
+
+.ball4{
+    width:200px;
+    height: 200px;
+   
+    top: 80px;
+    right: 60px;
+}
+
+.ball5{
+    width:200px;
+    height: 200px;
+   
+    top: 350px;
+    right: 40px;
+}
+
+.ball6{
+    width:200px;
+    height: 200px;
+    top: 200px;
+    left: 90px;
+}
+.ball7{
+    width:200px;
+    height: 200px;
+    top: 200px;
+    left: 200px;
+}
+
+.ball8{
+    width:200px;
+    height: 200px;
+   
+    top:150px;
+    right: 20px;
+}
+
+.ball9{
+    top: 100px;
+    right: 40px;
+}
+
+.ball10{
+    width:200px;
+    height: 200px;
+    top: 400px;
+    left: 10px;
+   
+}
+
+.ball1:hover,.ball2:hover,.ball3:hover,.ball4:hover,.ball5:hover,.ball6:hover,.ball7:hover,.ball8:hover,.ball9:hover,.ball10:hover{
+    transform: scale(.8);
+    
+}
+
+.btnBack{
+width: 700px;
+height: 50px;
+
+}
+
+.letter{
+letter-spacing: 1px;
+}
+
+@keyframes animate {
+    0%{
+scale: 0;
+    }
+    100%{
+scale: 1;
+    }
+}
+
+
+.active{
+    display: block;
+}
+
+
+.deactive{
+    display: none;
+}
